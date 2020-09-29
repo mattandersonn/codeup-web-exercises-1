@@ -22,6 +22,8 @@ function sayHello ("name") {
 
 function sayHello ("name")
 var helloMessage = sayHello(name: "Matt")
+console. log(helloMessage);
+
 
 
 
@@ -32,6 +34,10 @@ var helloMessage = sayHello(name: "Matt")
  * console.
  */
 
+var myName = "Matt";
+console.log(sayHello(myName));
+
+
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
 var random = Math.floor((Math.random() * 3) + 1);
@@ -41,7 +47,9 @@ var random = Math.floor((Math.random() * 3) + 1);
  * Create a function called 'isTwo' that takes a number as a parameter.
  * The function should return a boolean value based on whether or not the passed
  * number is the number 2.
- *
+ function isTwo(num){
+    return num ===2;
+
  * Example
  * > isTwo(1) // returns false
  * > isTwo(2) // returns true
@@ -53,6 +61,12 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+function isTwo(num) {
+    return num === 2;
+}
+console.log(random);
+console.log(isTwo(random));
+
 
 /**
  * TODO:
@@ -65,6 +79,12 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
+function calculateTip(percentage, total){
+    return percentage * total;
+}
+
+console.log(calculateTip(0.20, 20)
+console.log(calculateTip(0.25, 25.50)
 
 /**
  * TODO:
@@ -72,9 +92,13 @@ var random = Math.floor((Math.random() * 3) + 1);
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-var total =
-var percent =
-var tip =
+var billtotal = Number(prompt(messsage; "What is your total bill?"));
+var tip = Number(prompt(message:"How much would you like to tip? Enter a number from 1-100"));
+var tipPercentage = tip/100;
+var tipDollar = calculateTip(tipPercentage, billTotal).toFixed( fractionDigits:2);
+
+alert("You will need to tip $" + tipDollar);
+
 
 
 /**
@@ -89,4 +113,10 @@ var tip =
  * > var dicountPercent = .2; // 20%
  * > applyDiscount(originalPrice, dicountPercent) // 80
  *
- * > applyDiscount(45.99, 0.12) // 40.4712
+  * > applyDiscount(45.99, 0.12) // 40.4712
+ */
+
+ function applyDiscount(originalPrice, discountPercent){
+     var discountAmount = originalPrice * discountPercent;
+     return (originalPrice - discountAmount).toFixed( fractionDigits: 2);
+}
