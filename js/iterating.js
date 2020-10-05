@@ -70,4 +70,20 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
+    function first(Input){
+        return console.log(input[0]);
+
+    }
+
+    function second(input){
+        return console.log(input[1]);
+
+    }
+
+
+    function last(input){
+        return console.log(input[input.length -1]);
+
+    }
+
 })();
