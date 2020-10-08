@@ -107,8 +107,8 @@ for(var i = 0; i <= 5; i++){
 
 var randomColors = ["red", "orange", "yellow", "blue","green]";
 console.log(randomColors[0]);
-console.log(randomeColors[1]);
-console.log(randomColors[0]);
+console.log(randomColors[1]);
+console.log(randomColors[2]);
 console.log(randomColors[0]
 
 // randomColors.length ==5 | final index == 4
