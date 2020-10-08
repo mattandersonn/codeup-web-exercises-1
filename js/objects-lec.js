@@ -155,7 +155,7 @@ myMac.login = {
  * message: "Dialing..."
  */
 
-myPhone.all = function (){
+myPhone.call = function (){
     console.log("Dialing");
 };
 
